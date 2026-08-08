@@ -1,77 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sevora — Privacy Policy</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #121624; line-height: 1.7; padding: 40px 20px; max-width: 720px; margin: 0 auto; }
-        h1 { font-size: 28px; margin-bottom: 8px; }
-        h2 { font-size: 18px; margin-top: 32px; margin-bottom: 8px; }
-        p, li { font-size: 15px; color: #444; margin-bottom: 12px; }
-        ul { padding-left: 20px; }
-        .updated { font-size: 13px; color: #888; margin-bottom: 32px; }
-        a { color: #C9A24C; }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Sevora</title>
+<style>
+  :root {
+    --canvas: #FAF8F4;
+    --navy: #1B2A41;
+    --navy-soft: #3A4C68;
+    --gold: #B8934A;
+    --rule: #E4DED3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--navy);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px 96px; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 32px; margin-bottom: 40px; }
+  .brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    color: var(--navy);
+    margin: 0 0 24px;
+  }
+  .brand span { color: var(--gold); }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+    line-height: 1.15;
+    font-weight: 400;
+    margin: 0 0 12px;
+  }
+  .meta { color: var(--navy-soft); font-size: 15px; margin: 0; }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 48px 0 14px;
+    padding-top: 8px;
+  }
+  h3 { font-size: 16px; font-weight: 600; margin: 28px 0 8px; }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(184,147,74,0.35); }
+  a:hover { border-bottom-color: var(--gold); }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 20px; font-size: 15px; }
+  th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; color: var(--navy); }
+  td { color: var(--navy-soft); }
+  .callout {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--gold);
+    padding: 18px 20px;
+    margin: 0 0 20px;
+    font-size: 16px;
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule);
+    color: var(--navy-soft);
+    font-size: 14px;
+  }
+  @media (max-width: 600px) {
+    .wrap { padding: 40px 20px 72px; }
+    h1 { font-size: 32px; }
+    body { font-size: 16px; }
+  }
+</style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: July 1, 2026</p>
-    <p>Sevora ("we", "our", "us") operates the Sevora mobile application. This policy explains what information we collect, how we use it, and your rights.</p>
-    <h2>Information We Collect</h2>
-    <p>When you create an account, we collect:</p>
-    <ul>
-        <li>Name and email address</li>
-        <li>Phone number (optional)</li>
-        <li>Profile photo (optional)</li>
-        <li>Location (city/neighborhood you enter, not GPS tracking)</li>
-    </ul>
-    <p>When you book or provide services:</p>
-    <ul>
-        <li>Booking details (date, time, service type, price)</li>
-        <li>Messages exchanged between customers and providers</li>
-        <li>Payment information (processed securely by Stripe — we never see or store your full card number)</li>
-    </ul>
-    <p>Automatically collected:</p>
-    <ul>
-        <li>Device token for push notifications (only if you grant permission)</li>
-        <li>Basic app usage data for crash reporting</li>
-    </ul>
-    <h2>How We Use Your Information</h2>
-    <ul>
-        <li>To connect customers with service providers</li>
-        <li>To process bookings and payments</li>
-        <li>To send booking confirmations, reminders, and messages</li>
-        <li>To display provider profiles to customers</li>
-        <li>To improve the app experience</li>
-    </ul>
-    <p>We do not sell your personal information to third parties. Ever.</p>
-    <h2>Payment Processing</h2>
-    <p>All payments are processed by <a href="https://stripe.com/privacy">Stripe</a>. When you make a payment, your card details go directly to Stripe's secure servers. We only receive confirmation that payment succeeded or failed.</p>
-    <h2>Data Sharing</h2>
-    <p>We share information only as needed to provide the service:</p>
-    <ul>
-        <li><strong>Between customers and providers:</strong> your name, profile photo, and messages are visible to the other party in a booking</li>
-        <li><strong>Stripe:</strong> payment processing</li>
-        <li><strong>Apple Push Notification service:</strong> delivering notifications to your device</li>
-    </ul>
-    <h2>Data Retention</h2>
-    <p>We retain your account data as long as your account is active. Booking records are kept for accounting and dispute resolution purposes. You can request deletion at any time.</p>
-    <h2>Your Rights</h2>
-    <p>You can:</p>
-    <ul>
-        <li>Access and update your profile information in the app</li>
-        <li>Delete your account and all associated data (in Account settings)</li>
-        <li>Opt out of push notifications (in your device Settings)</li>
-        <li>Request a copy of your data by contacting us</li>
-    </ul>
-    <h2>Children's Privacy</h2>
-    <p>Sevora is not intended for users under 18. We do not knowingly collect information from children.</p>
-    <h2>Changes to This Policy</h2>
-    <p>We may update this policy from time to time. We'll notify you of significant changes through the app or by email.</p>
-    <h2>Contact Us</h2>
-    <p>Questions about this policy? Email us at <a href="mailto:juniorjmartinez05@gmail.com">juniorjmartinez05@gmail.com</a>.</p>
-    <p>Sevora · Philadelphia, PA</p>
+<div class="wrap">
+
+<header>
+  <p class="brand">SEVORA<span>.</span></p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective August 7, 2026 &middot; Last updated August 7, 2026</p>
+</header>
+
+<p>Sevora is a booking marketplace that connects clients with independent service professionals — barbers, stylists, photographers, nail artists, and trainers — in Philadelphia. This policy explains what information we collect, why we collect it, who we share it with, and the choices you have.</p>
+
+<p>Sevora is operated by Junior Martinez, an independent developer based in Philadelphia, Pennsylvania. In this policy, "Sevora," "we," and "us" refer to that operator. "You" refers to anyone who uses the Sevora app, whether as a client or as a service professional.</p>
+
+<div class="callout">
+  We do not sell your personal information. We do not share it with advertisers or data brokers. We do not track you across other companies' apps or websites.
+</div>
+
+<h2>1. Information we collect</h2>
+
+<h3>Information you give us</h3>
+<ul>
+  <li><strong>Account information</strong> — your name, email address, and password when you create an account. Passwords are stored only as salted cryptographic hashes; we never see or store your password in readable form.</li>
+  <li><strong>Phone number</strong> — if you choose to add one to your profile.</li>
+  <li><strong>Profile content</strong> — profile photos, and for service professionals, business descriptions, service listings, pricing, availability, and work-gallery photographs you upload.</li>
+  <li><strong>Messages</strong> — the content of messages you send to other users through the app, including any images you attach.</li>
+  <li><strong>Reviews and ratings</strong> you submit about a service professional.</li>
+  <li><strong>Reports</strong> you file about other users, including the reason you select and any details you provide.</li>
+</ul>
+
+<h3>Information created when you use Sevora</h3>
+<ul>
+  <li><strong>Booking records</strong> — the services you book or provide, appointment dates and times, booking status, and price.</li>
+  <li><strong>Transaction records</strong> — amounts charged, refund status, and payout status. See Section 4 regarding card details.</li>
+  <li><strong>Search queries</strong> — the text you type into Sevora's search, such as "haircut around noon tomorrow." See Section 5.</li>
+  <li><strong>Device tokens</strong> — an identifier issued by Apple that allows us to deliver push notifications to your device. You can revoke this at any time in iOS Settings.</li>
+  <li><strong>Basic technical information</strong> — such as the app version in use, needed to operate and troubleshoot the service.</li>
+</ul>
+
+<h3>Information we do not collect</h3>
+<p>Sevora does not request or collect your device's location, contacts, calendar, microphone, health data, browsing history, or search history from outside the app. Distances shown next to a service professional are calculated from the neighborhood information they provide about their business, not from your device's location.</p>
+
+<h2>2. How we use your information</h2>
+
+<table>
+  <tr><th>What we collect</th><th>Why</th></tr>
+  <tr><td>Name, email, phone</td><td>Create and secure your account, confirm bookings, contact you about your appointments</td></tr>
+  <tr><td>Profile and gallery photos</td><td>Display your profile and let clients see a professional's work before booking</td></tr>
+  <tr><td>Messages</td><td>Deliver your conversations, and investigate reports of abuse</td></tr>
+  <tr><td>Booking and transaction records</td><td>Process appointments, calculate earnings and platform fees, provide receipts and refunds</td></tr>
+  <tr><td>Search queries</td><td>Interpret what you're looking for and return relevant results</td></tr>
+  <tr><td>Device tokens</td><td>Send appointment reminders and new-message notifications</td></tr>
+</table>
+
+<p>We use your information to operate the service, keep it safe, comply with our legal obligations, and communicate with you about your account. We do not use your information to build advertising profiles.</p>
+
+<h2>3. Who we share information with</h2>
+
+<p>We share information only with the service providers we need to run Sevora, and only to the extent required. These are our current providers:</p>
+
+<table>
+  <tr><th>Provider</th><th>What they receive</th><th>Purpose</th></tr>
+  <tr><td>Supabase</td><td>Account, profile, booking, and message data</td><td>Database, authentication, and file storage</td></tr>
+  <tr><td>Stripe</td><td>Payment details, transaction amounts, and identity information required of service professionals</td><td>Payment processing and payouts</td></tr>
+  <tr><td>Apple</td><td>Device tokens and notification content</td><td>Push notification delivery</td></tr>
+  <tr><td>Anthropic</td><td>The text of your search queries</td><td>Interpreting natural-language searches</td></tr>
+</table>
+
+<p>We also share information between users where the service requires it. When you book an appointment, the service professional sees your name, profile photo, and booking details. When you view a professional's profile, you see the information they have chosen to publish.</p>
+
+<p>We may disclose information if we are legally required to do so, or where we believe in good faith that disclosure is necessary to protect the safety of a user or the public, or to investigate fraud or a violation of our terms.</p>
+
+<p>If Sevora is ever acquired or merged, information may transfer as part of that transaction. We will notify you in the app before your information becomes subject to a different privacy policy.</p>
+
+<h2>4. Payments</h2>
+
+<p>Payments are processed by Stripe. <strong>Sevora never receives or stores your full card number, security code, or bank account number.</strong> That information is transmitted directly from your device to Stripe. We receive only a payment confirmation, the last four digits of the card, and the transaction amount.</p>
+
+<p>Service professionals who accept payments through Sevora must complete Stripe's onboarding, which requires identity and bank account information collected directly by Stripe under its own privacy policy. Stripe's handling of that information is described at <a href="https://stripe.com/privacy">stripe.com/privacy</a>.</p>
+
+<h2>5. Search queries and automated processing</h2>
+
+<p>Sevora's search lets you describe what you need in plain language. To interpret those searches, the text you type is sent to Anthropic's Claude API, which returns a structured interpretation — the type of service and any date or time you mentioned.</p>
+
+<p>Only the search text itself is sent. Your name, email, account identifier, and booking history are not included. Anthropic does not use data submitted through its API to train its models. If the interpretation service is unavailable, Sevora falls back to conventional keyword matching and your search still works.</p>
+
+<h2>6. Messaging, reporting, and safety</h2>
+
+<p>Messages between clients and service professionals are stored on our servers so they are available across sessions. They are not end-to-end encrypted, and they may be reviewed by us when a user files a report or where we have reason to believe our terms have been violated.</p>
+
+<p>Every conversation includes options to report the conversation and to block the other person. Blocking removes the conversation from your view and prevents further contact. Reports are recorded with the reason you select and reviewed by us; we aim to review reports within 24 hours. We may remove content, suspend accounts, or ban users in response.</p>
+
+<h2>7. How long we keep information</h2>
+
+<ul>
+  <li><strong>Account and profile information</strong> — for as long as your account is active.</li>
+  <li><strong>Booking and transaction records</strong> — retained after account deletion where required for tax, accounting, and fraud-prevention purposes, generally up to seven years.</li>
+  <li><strong>Messages</strong> — retained while both accounts are active; deleted when either participant deletes their account, except where preserved as part of an open safety investigation.</li>
+  <li><strong>Reports</strong> — retained for up to two years so that repeated patterns of abuse can be identified.</li>
+  <li><strong>Search queries</strong> — not stored in association with your account.</li>
+</ul>
+
+<h2>8. Deleting your account</h2>
+
+<p>You can delete your account at any time from within the app: open <strong>Account</strong>, then <strong>Delete Account</strong>. Deletion removes your profile, photos, service listings, and messages, subject to the retention exceptions described above. Deletion is permanent and cannot be undone.</p>
+
+<p>If you cannot access the app, email <a href="mailto:juniorjmartinez05@gmail.com">juniorjmartinez05@gmail.com</a> from your registered address and we will process the deletion within 30 days.</p>
+
+<h2>9. Your rights and choices</h2>
+
+<ul>
+  <li><strong>Access and correction</strong> — you can view and edit your profile information at any time in the app.</li>
+  <li><strong>Deletion</strong> — see Section 8.</li>
+  <li><strong>Push notifications</strong> — can be disabled in iOS Settings under Notifications, or from within Sevora.</li>
+  <li><strong>Photo library access</strong> — granted when you first upload a photo and revocable in iOS Settings.</li>
+</ul>
+
+<p>California residents have the right under the CCPA to know what personal information we collect, to request its deletion, and not to be discriminated against for exercising those rights. Sevora does not sell personal information or share it for cross-context behavioral advertising. To make a request, email us at the address below.</p>
+
+<h2>10. Children</h2>
+
+<p>Sevora is not directed to children under 13, and we do not knowingly collect personal information from them. If you believe a child under 13 has provided us with information, contact us and we will delete it. Users under 18 should have a parent or guardian's permission before booking and paying for services.</p>
+
+<h2>11. Security</h2>
+
+<p>Data is transmitted between your device and our servers over TLS-encrypted connections and is encrypted at rest by our infrastructure provider. Access to production data is restricted, and database-level security rules limit each account to its own records. No system is perfectly secure, and we cannot guarantee absolute security, but we work to protect your information and will notify affected users without undue delay if a breach affecting personal information occurs.</p>
+
+<h2>12. Where information is processed</h2>
+
+<p>Sevora is operated from the United States, and information is stored and processed on servers located in the United States. Sevora is currently available only in the United States.</p>
+
+<h2>13. Changes to this policy</h2>
+
+<p>We may update this policy as Sevora changes. When we do, we will revise the "Last updated" date above. If the changes are material, we will notify you in the app before they take effect. Continuing to use Sevora after a change means you accept the updated policy.</p>
+
+<h2>14. Contact</h2>
+
+<p>Questions about this policy, or about your information:</p>
+<p>
+  <strong>Sevora</strong><br>
+  Junior Martinez<br>
+  Philadelphia, Pennsylvania, United States<br>
+  <a href="mailto:juniorjmartinez05@gmail.com">juniorjmartinez05@gmail.com</a>
+</p>
+
+<footer>
+  &copy; 2026 Junior Martinez. All rights reserved.
+</footer>
+
+</div>
 </body>
 </html>
